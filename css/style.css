@@ -4,9 +4,23 @@
   /* width: 100%; */
   box-sizing: border-box;
 }
+header {
+  position: relative;
+}
 .hero-img {
+  background: url("../img/hero.jpeg");
+  opacity: 0.6;
   height: 60vh;
-  border: 2px solid #333;
+}
+.text {
+  position: absolute;
+  width: 100%;
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 2px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .graph {
   height: 25rem;
@@ -51,6 +65,13 @@
 
 footer {
   text-align: center;
+  background-image: url("../img/hero.jpeg");
+  opacity: 0.6;
+}
+footer p {
+  color: #333;
+  font-size: 5px;
+  padding: 0.5rem;
 }
 
 @media (max-width: 500px) {
@@ -58,28 +79,65 @@ footer {
     height: 20rem;
     border: 2px solid #333;
   }
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   .graph {
     height: 25rem;
     border: 2px solid #333;
   }
+  /* ----- Yuki----- */
   .js {
     height: 10rem;
-    border: 2px solid #333;
+    /* border: 2px solid #333; */
     margin: 2rem;
     border-radius: 10px;
+    position: relative;
   }
   .py {
     height: 10rem;
     border: 2px solid #333;
     margin: 2rem;
     border-radius: 10px;
+    position: relative;
   }
   .sql {
     height: 10rem;
     border: 2px solid #333;
     margin: 2rem;
     border-radius: 10px;
+    position: relative;
   }
+  .cercle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* color: #fff; */
+    /* border-radius: 50px; */
+  }
+  .fab,
+  .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .fa-js-square {
+    color: #fff0b3;
+  }
+  .fa-python {
+    color: #98b2e6;
+  }
+  .fa-database {
+    color: #8cd9b3;
+  }
+
+  /* ----- Kaori ----- */
+
   .java {
     height: 10rem;
     border: 2px solid #333;
