@@ -6,13 +6,14 @@
 }
 header {
   position: relative;
+  background-color: #fff;
 }
 .hero-img {
   background: url("../img/hero.jpeg");
   opacity: 0.6;
   height: 60vh;
 }
-.text {
+header .text {
   position: absolute;
   width: 100%;
   color: #333;
@@ -28,19 +29,16 @@ header {
 }
 .js {
   height: 20rem;
-  border: 2px solid #333;
   margin: 2rem;
   border-radius: 20px;
 }
 .py {
   height: 20rem;
-  border: 2px solid #333;
   margin: 2rem;
   border-radius: 20px;
 }
 .sql {
   height: 20rem;
-  border: 2px solid #333;
   margin: 2rem;
   border-radius: 20px;
 }
@@ -79,7 +77,7 @@ footer p {
     height: 20rem;
     border: 2px solid #333;
   }
-  .text {
+  header .text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -90,34 +88,34 @@ footer p {
     border: 2px solid #333;
   }
   /* ----- Yuki----- */
-  .js {
+  .box {
     height: 10rem;
-    /* border: 2px solid #333; */
     margin: 2rem;
     border-radius: 10px;
     position: relative;
   }
+  .js {
+    background-color: #fff0b3;
+  }
   .py {
-    height: 10rem;
-    border: 2px solid #333;
-    margin: 2rem;
-    border-radius: 10px;
-    position: relative;
+    background-color: #98b2e6;
   }
   .sql {
     height: 10rem;
-    border: 2px solid #333;
     margin: 2rem;
     border-radius: 10px;
     position: relative;
+    background-color: #8cd9b3;
   }
   .cercle {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* color: #fff; */
-    /* border-radius: 50px; */
+    background-color: #fff;
+    border-radius: 50px;
+    width: 6rem;
+    height: 6rem;
   }
   .fab,
   .fas {
@@ -134,6 +132,24 @@ footer p {
   }
   .fa-database {
     color: #8cd9b3;
+  }
+  .text1 {
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    transform: translate(-10%, -50%);
+    color: #fff;
+    width: 40%;
+    font-weight: 700;
+  }
+  .js-emphasize {
+    color: #999;
+    font-size: large;
+  }
+
+  .text2 {
+    position: absolute;
+    color: #999999;
   }
 
   /* ----- Kaori ----- */
