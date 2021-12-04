@@ -191,6 +191,7 @@ footer p {
     line-height: 1.4rem;
     top: 50%;
     transform: translate(-5%, -50%);
+    width: 35%;
   }
 
   .wide-l {
