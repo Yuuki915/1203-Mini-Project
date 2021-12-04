@@ -31,7 +31,7 @@ header .text {
 
 .box {
   height: 10rem;
-  margin: 2rem;
+  margin: 2rem 15rem;
   border-radius: 10px;
   position: relative;
 }
@@ -141,6 +141,11 @@ footer p {
   .graph {
     height: 25rem;
     border: 2px solid #333;
+  }
+  .box {
+    height: 10rem;
+    margin: 1rem;
+    border-radius: 10px;
   }
   /* ----- Yuki----- */
   .js {
