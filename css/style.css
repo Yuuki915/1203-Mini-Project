@@ -10,7 +10,7 @@ header {
   background-color: #fff;
 }
 .hero-img {
-  background: url("../img/hero.jpeg");
+  background: url('../img/hero.jpeg');
   opacity: 0.6;
   height: 60vh;
 }
@@ -100,26 +100,70 @@ header .text {
 }
 
 /* ----- Kaori----- */
-
 .java {
-  height: 20rem;
-  margin: 2rem;
-  border-radius: 20px;
+  width: 60vw;
+  margin: 2rem auto;
+  background-color: #ffd18c;
 }
 .node {
-  height: 20rem;
-  margin: 2rem;
-  border-radius: 20px;
+  width: 60vw;
+  margin: 2rem auto;
+  background-color: #689f639f;
 }
 .ts {
-  height: 20rem;
-  margin: 2rem;
-  border-radius: 20px;
+  width: 60vw;
+  margin: 2rem auto;
+  background-color: #3179c69f;
+}
+
+.fa-java {
+  color: #ffc368;
+}
+
+.fa-node {
+  opacity: 0.6;
+}
+
+.fa-ts {
+  opacity: 0.6;
+}
+
+.explain-l {
+  position: absolute;
+  color: #fff;
+  height: auto;
+  letter-spacing: 1px;
+  width: 39%;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  left: 5%;
+  top: 20%;
+  transform: translate(-5%, -20%);
+}
+
+.wide-l {
+  display: block;
+  top: 85%;
+  transform: translate(-5%, -85%);
+}
+
+.explain-r {
+  position: absolute;
+  color: #fff;
+  right: 3%;
+  top: 50%;
+  transform: translate(-3%, -50%);
+  width: 30%;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  line-height: 1.4rem;
 }
 
 footer {
   text-align: center;
-  background-image: url("../img/hero.jpeg");
+  background-image: url('../img/hero.jpeg');
   opacity: 0.6;
 }
 footer p {
@@ -128,6 +172,57 @@ footer p {
   padding: 0.5rem;
 }
 
+/* Normal */
+@media (max-width: 1200px) {
+  .java {
+    width: 80vw;
+  }
+  .node {
+    width: 80vw;
+  }
+  .ts {
+    width: 80vw;
+  }
+
+  .explain-l {
+    position: absolute;
+    color: #fff;
+    height: auto;
+    letter-spacing: 1px;
+    width: 39%;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    left: 5%;
+    top: 20%;
+    transform: translate(-5%, -20%);
+  }
+  .wide-l {
+    display: block;
+    top: 80%;
+    transform: translate(-5%, -80%);
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .explain-l {
+    height: auto;
+    width: 39%;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    left: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+  }
+
+  .wide-l {
+    display: none;
+  }
+}
+
+/* Smartphone */
 @media (max-width: 500px) {
   .hero-img {
     height: 20rem;
@@ -210,131 +305,21 @@ footer p {
   }
 
   /* ----- Kaori ----- */
-  /* Java starts */
   .java {
     height: 10rem;
-    margin: 2rem;
+    margin: 1rem;
     border-radius: 10px;
-    position: relative;
-    background-color: #ffd18c;
   }
 
-  .java > .explain-tl {
-    color: #fff;
-    width: 40%;
-    height: auto;
-    font-weight: 700;
-    padding-top: 0.75rem;
-    padding-left: 0.6rem;
-    letter-spacing: 1px;
-    line-height: 1.2rem;
-  }
-
-  .java > .explain-bl {
-    position: absolute;
-    color: #fff;
-    width: 40%;
-    height: auto;
-    font-weight: 700;
-    bottom: 0;
-    padding-bottom: 0.75rem;
-    padding-left: 0.6rem;
-    letter-spacing: 1px;
-    line-height: 1.2rem;
-  }
-
-  .java > .explain-br {
-    position: absolute;
-    color: #fff;
-    width: auto;
-    height: auto;
-    font-size: 0.8rem;
-    font-weight: 600;
-    right: 0;
-    top: 0;
-    padding-top: 1rem;
-    padding-right: 0.6rem;
-    letter-spacing: 1px;
-    line-height: 1.2rem;
-  }
-
-  .netflix-logo {
-    position: absolute;
-    opacity: 0.8;
-    filter: grayscale(100%);
-    width: 5rem;
-    right: 0;
-    margin-top: 1rem;
-    margin-right: 3.5rem;
-  }
-
-  .google-logo {
-    position: absolute;
-    opacity: 0.8;
-    filter: grayscale(100%);
-    width: 4rem;
-    right: 0;
-    margin-top: 4rem;
-    margin-right: 6rem;
-  }
-
-  .android-logo {
-    position: absolute;
-    opacity: 0.8;
-    filter: grayscale(100%);
-    width: 4rem;
-    right: 0;
-    margin-top: 3.2rem;
-    margin-right: 0.8rem;
-  }
-  /* Java ends */
-
-  .emphasize {
-    color: #999;
-    font-size: large;
-  }
-
-  .wide {
-    display: none;
-  }
-
-  /* node starts */
   .node {
     height: 10rem;
-    margin: 2rem;
+    margin: 1rem;
     border-radius: 10px;
-    position: relative;
-    background-color: #689f639f;
-  }
-
-  .node > .explain-tl {
-    color: #fff;
-    width: 40%;
-    height: auto;
-    font-weight: 700;
-    padding-top: 0.75rem;
-    padding-left: 0.6rem;
-    letter-spacing: 1px;
-    line-height: 1.2rem;
   }
 
   .ts {
     height: 10rem;
-    margin: 2rem;
+    margin: 1rem;
     border-radius: 10px;
-    position: relative;
-    background-color: #3179c69f;
-  }
-
-  .fa-java {
-    color: #ffc368;
-  }
-
-  .fa-node {
-    opacity: 0.6;
-  }
-
-  .fa-ts {
-    opacity: 0.6;
   }
 }
