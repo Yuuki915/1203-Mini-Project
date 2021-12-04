@@ -4,12 +4,13 @@
   /* width: 100%; */
   box-sizing: border-box;
 }
+
 header {
   position: relative;
   background-color: #fff;
 }
 .hero-img {
-  background: url("../img/hero.jpeg");
+  background: url('../img/hero.jpeg');
   opacity: 0.6;
   height: 60vh;
 }
@@ -44,26 +45,23 @@ header .text {
 }
 .java {
   height: 20rem;
-  border: 2px solid #333;
   margin: 2rem;
   border-radius: 20px;
 }
 .node {
   height: 20rem;
-  border: 2px solid #333;
   margin: 2rem;
   border-radius: 20px;
 }
 .ts {
   height: 20rem;
-  border: 2px solid #333;
   margin: 2rem;
   border-radius: 20px;
 }
 
 footer {
   text-align: center;
-  background-image: url("../img/hero.jpeg");
+  background-image: url('../img/hero.jpeg');
   opacity: 0.6;
 }
 footer p {
@@ -75,7 +73,6 @@ footer p {
 @media (max-width: 500px) {
   .hero-img {
     height: 20rem;
-    border: 2px solid #333;
   }
   header .text {
     position: absolute;
@@ -153,23 +150,131 @@ footer p {
   }
 
   /* ----- Kaori ----- */
-
+  /* Java starts */
   .java {
     height: 10rem;
-    border: 2px solid #333;
     margin: 2rem;
     border-radius: 10px;
+    position: relative;
+    background-color: #ffd18c;
   }
+
+  .java > .explain-tl {
+    color: #fff;
+    width: 40%;
+    height: auto;
+    font-weight: 700;
+    padding-top: 0.75rem;
+    padding-left: 0.6rem;
+    letter-spacing: 1px;
+    line-height: 1.2rem;
+  }
+
+  .java > .explain-bl {
+    position: absolute;
+    color: #fff;
+    width: 40%;
+    height: auto;
+    font-weight: 700;
+    bottom: 0;
+    padding-bottom: 0.75rem;
+    padding-left: 0.6rem;
+    letter-spacing: 1px;
+    line-height: 1.2rem;
+  }
+
+  .java > .explain-br {
+    position: absolute;
+    color: #fff;
+    width: auto;
+    height: auto;
+    font-size: 0.8rem;
+    font-weight: 600;
+    right: 0;
+    top: 0;
+    padding-top: 1rem;
+    padding-right: 0.6rem;
+    letter-spacing: 1px;
+    line-height: 1.2rem;
+  }
+
+  .netflix-logo {
+    position: absolute;
+    opacity: 0.8;
+    filter: grayscale(100%);
+    width: 5rem;
+    right: 0;
+    margin-top: 1rem;
+    margin-right: 3.5rem;
+  }
+
+  .google-logo {
+    position: absolute;
+    opacity: 0.8;
+    filter: grayscale(100%);
+    width: 4rem;
+    right: 0;
+    margin-top: 4rem;
+    margin-right: 6rem;
+  }
+
+  .android-logo {
+    position: absolute;
+    opacity: 0.8;
+    filter: grayscale(100%);
+    width: 4rem;
+    right: 0;
+    margin-top: 3.2rem;
+    margin-right: 0.8rem;
+  }
+  /* Java ends */
+
+  .emphasize {
+    color: #999;
+    font-size: large;
+  }
+
+  .wide {
+    display: none;
+  }
+
+  /* node starts */
   .node {
     height: 10rem;
-    border: 2px solid #333;
     margin: 2rem;
     border-radius: 10px;
+    position: relative;
+    background-color: #689f639f;
   }
+
+  .node > .explain-tl {
+    color: #fff;
+    width: 40%;
+    height: auto;
+    font-weight: 700;
+    padding-top: 0.75rem;
+    padding-left: 0.6rem;
+    letter-spacing: 1px;
+    line-height: 1.2rem;
+  }
+
   .ts {
     height: 10rem;
-    border: 2px solid #333;
     margin: 2rem;
     border-radius: 10px;
+    position: relative;
+    background-color: #3179c69f;
+  }
+
+  .fa-java {
+    color: #ffc368;
+  }
+
+  .fa-node {
+    opacity: 0.6;
+  }
+
+  .fa-ts {
+    opacity: 0.6;
   }
 }
