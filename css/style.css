@@ -10,7 +10,7 @@ header {
   background-color: #fff;
 }
 .hero-img {
-  background: url('../img/hero.jpeg');
+  background: url("../img/hero.jpeg");
   opacity: 0.6;
   height: 60vh;
 }
@@ -28,21 +28,79 @@ header .text {
   height: 25rem;
   border: 2px solid #333;
 }
-.js {
-  height: 20rem;
+
+.box {
+  height: 10rem;
   margin: 2rem;
-  border-radius: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+/* ----- Yuki----- */
+.js {
+  background-color: #fff0b3;
 }
 .py {
-  height: 20rem;
-  margin: 2rem;
-  border-radius: 20px;
+  background-color: #98b2e6;
 }
 .sql {
-  height: 20rem;
-  margin: 2rem;
-  border-radius: 20px;
+  background-color: #8cd9b3;
 }
+.cercle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 50px;
+  width: 6rem;
+  height: 6rem;
+}
+.fab,
+.fas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fa-js-square {
+  color: #fff0b3;
+}
+.fa-python {
+  color: #98b2e6;
+}
+.fa-database {
+  color: #8cd9b3;
+}
+.text1 {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  color: #fff;
+  width: 39%;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+.emphasize {
+  color: #999;
+  font-size: large;
+}
+
+.text2 {
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translate(-3%, -50%);
+  color: #fff;
+  width: 30%;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+/* ----- Kaori----- */
+
 .java {
   height: 20rem;
   margin: 2rem;
@@ -61,7 +119,7 @@ header .text {
 
 footer {
   text-align: center;
-  background-image: url('../img/hero.jpeg');
+  background-image: url("../img/hero.jpeg");
   opacity: 0.6;
 }
 footer p {
@@ -85,12 +143,6 @@ footer p {
     border: 2px solid #333;
   }
   /* ----- Yuki----- */
-  .box {
-    height: 10rem;
-    margin: 2rem;
-    border-radius: 10px;
-    position: relative;
-  }
   .js {
     background-color: #fff0b3;
   }
@@ -98,23 +150,18 @@ footer p {
     background-color: #98b2e6;
   }
   .sql {
-    height: 10rem;
-    margin: 2rem;
-    border-radius: 10px;
-    position: relative;
     background-color: #8cd9b3;
   }
   .cercle {
-    position: absolute;
-    top: 50%;
+    /* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    border-radius: 50px;
+    border-radius: 50px; */
     width: 6rem;
     height: 6rem;
   }
-  .fab,
+  /* .fab,
   .fas {
     position: absolute;
     top: 50%;
@@ -129,24 +176,32 @@ footer p {
   }
   .fa-database {
     color: #8cd9b3;
-  }
+  } */
   .text1 {
-    position: absolute;
-    left: 7%;
-    top: 50%;
-    transform: translate(-10%, -50%);
-    color: #fff;
-    width: 40%;
+    width: 39%;
     font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    left: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    /* position: absolute; */
+    /* color: #fff; */
   }
-  .js-emphasize {
-    color: #999;
+  .emphasize {
+    /* color: #999; */
     font-size: large;
   }
-
   .text2 {
-    position: absolute;
-    color: #999999;
+    /* position: absolute; */
+    /* color: #fff; */
+    right: 3%;
+    top: 50%;
+    transform: translate(-3%, -50%);
+    width: 30%;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
   }
 
   /* ----- Kaori ----- */
