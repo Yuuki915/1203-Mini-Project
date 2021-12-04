@@ -103,17 +103,17 @@ header .text {
 .java {
   width: 60vw;
   margin: 2rem auto;
-  background-color: #ffd18c;
+  background-color: #ffd18ccb;
 }
 .node {
   width: 60vw;
   margin: 2rem auto;
-  background-color: #689f639f;
+  background-color: #689f6370;
 }
 .ts {
   width: 60vw;
   margin: 2rem auto;
-  background-color: #3179c69f;
+  background-color: #3179c660;
 }
 
 .fa-java {
@@ -183,36 +183,12 @@ footer p {
   .ts {
     width: 80vw;
   }
-
-  .explain-l {
-    position: absolute;
-    color: #fff;
-    height: auto;
-    letter-spacing: 1px;
-    width: 39%;
-    font-weight: 700;
-    font-size: 0.9rem;
-    line-height: 1.2rem;
-    left: 5%;
-    top: 20%;
-    transform: translate(-5%, -20%);
-  }
-  .wide-l {
-    display: block;
-    top: 80%;
-    transform: translate(-5%, -80%);
-  }
 }
 
 /* Tablet */
 @media (max-width: 768px) {
   .explain-l {
-    height: auto;
-    width: 39%;
-    font-weight: 700;
-    font-size: 0.9rem;
     line-height: 1.4rem;
-    left: 5%;
     top: 50%;
     transform: translate(-5%, -50%);
   }
@@ -306,20 +282,14 @@ footer p {
 
   /* ----- Kaori ----- */
   .java {
-    height: 10rem;
-    margin: 1rem;
-    border-radius: 10px;
+    width: auto;
   }
 
   .node {
-    height: 10rem;
-    margin: 1rem;
-    border-radius: 10px;
+    width: auto;
   }
 
   .ts {
-    height: 10rem;
-    margin: 1rem;
-    border-radius: 10px;
+    width: auto;
   }
 }
