@@ -602,30 +602,9 @@ footer p {
     background-color: #8cd9b3;
   }
   .cercle {
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    border-radius: 50px; */
     width: 6rem;
     height: 6rem;
   }
-  /* .fab,
-  .fas {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .fa-js-square {
-    color: #fff0b3;
-  }
-  .fa-python {
-    color: #98b2e6;
-  }
-  .fa-database {
-    color: #8cd9b3;
-  } */
   .text1 {
     width: 39%;
     font-weight: 700;
@@ -634,16 +613,11 @@ footer p {
     left: 5%;
     top: 50%;
     transform: translate(-5%, -50%);
-    /* position: absolute; */
-    /* color: #fff; */
   }
   .emphasize {
-    /* color: #999; */
     font-size: large;
   }
   .text2 {
-    /* position: absolute; */
-    /* color: #fff; */
     right: 3%;
     top: 50%;
     transform: translate(-3%, -50%);
