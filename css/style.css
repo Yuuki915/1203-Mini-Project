@@ -223,7 +223,7 @@ footer p {
   }
   .graph {
     height: auto;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1.2rem;
   }
   .js-bar {
     height: 1.5rem;
@@ -271,8 +271,8 @@ footer p {
     right: 0;
     color: #999;
     font-weight: 700;
-    font-size: 0.9rem;
-    line-height: 0.9rem;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
     text-align: left;
     vertical-align: middle;
     letter-spacing: 1px;
@@ -477,5 +477,29 @@ footer p {
 
   .ts {
     width: auto;
+  }
+
+  .explain-l {
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .explain-r {
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    line-height: 1.4rem;
+    right: 2%;
+    top: 50%;
+    transform: translate(-2%, -50%);
+    width: 28%;
+  }
+
+  .explain-l .emphasize,
+  .explain-r .emphasize {
+    color: #999;
+    font-size: medium;
   }
 }
