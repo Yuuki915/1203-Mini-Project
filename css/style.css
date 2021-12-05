@@ -26,7 +26,6 @@ header .text {
 }
 .graph {
   height: 25rem;
-  border: 2px solid #333;
 }
 
 .box {
@@ -211,9 +210,208 @@ footer p {
     transform: translate(-50%, -50%);
   }
   .graph {
-    height: 25rem;
-    border: 2px solid #333;
+    height: auto;
+    padding: 0.5rem 2rem;
   }
+  .js-bar {
+    height: 1.5rem;
+    width: 100%;
+    margin: 0.3rem auto;
+  }
+  .python-bar {
+    height: 1.5rem;
+    width: 100%;
+    margin: 0.3rem auto;
+  }
+  .sql-bar {
+    height: 1.5rem;
+    width: 100%;
+    margin: 0.3rem auto;
+  }
+  .java-bar {
+    height: 1.5rem;
+    width: 100%;
+    margin: 0.3rem auto;
+  }
+  .node-bar {
+    height: 1.5rem;
+    width: 100%;
+    margin: 0.3rem auto;
+  }
+  .ts-bar {
+    height: 1.5rem;
+    width: 100%;
+    margin: 0.3rem auto;
+  }
+
+  .val {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    border-radius: 5px;
+    transform-origin: 0%;
+  }
+
+  .name {
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    right: 0;
+    color: #999;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    text-align: left;
+    vertical-align: middle;
+    letter-spacing: 1px;
+  }
+
+  .per {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 7px;
+    right: 0.8rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: 1s percent 2.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes percent {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .js-bar .val {
+    width: 0;
+    background-color: #ffe785;
+    animation: 3s slidein-js 500ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slidein-js {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%;
+    }
+  }
+
+  .python-bar .val {
+    width: 0;
+    background-color: #98b2e6;
+    animation: 3s slidein-py 500ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slidein-py {
+    from {
+      width: 0;
+    }
+    to {
+      width: 59.4%;
+    }
+  }
+
+  .sql-bar .val {
+    width: 0;
+    background-color: #8cd9b3;
+    animation: 3s slidein-sql 500ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slidein-sql {
+    from {
+      width: 0;
+    }
+    to {
+      width: 57.98%;
+    }
+  }
+
+  .java-bar .val {
+    width: 0;
+    background-color: #ffd18ccb;
+    animation: 3s slidein-java 500ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slidein-java {
+    from {
+      width: 0;
+    }
+    to {
+      width: 43.53%;
+    }
+  }
+
+  .node-bar .val {
+    width: 0;
+    background-color: #689f6370;
+    animation: 3s slidein-node 500ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slidein-node {
+    from {
+      width: 0;
+    }
+    to {
+      width: 41.76%;
+    }
+  }
+
+  .ts-bar .val {
+    width: 0;
+    background-color: #3179c660;
+    animation: 3s slidein-ts 500ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slidein-ts {
+    from {
+      width: 0;
+    }
+    to {
+      width: 37.18%;
+    }
+  }
+
+  /* .sql-bar {
+    border: 1px solid #33333317;
+    height: 1.5rem;
+    width: 100%;
+    margin: 0.3rem auto;
+  }
+  .java-bar {
+    border: 1px solid #33333317;
+    height: 1.5rem;
+    width: 100%;
+    margin: 0.3rem auto;
+  }
+  .node-bar {
+    border: 1px solid #33333317;
+    height: 1.5rem;
+    width: 100%;
+    margin: 0.3rem auto;
+  }
+  .ts-bar {
+    border: 1px solid #33333317;
+    height: 1.5rem;
+    width: 100%;
+    margin: 0.3rem auto;
+  } */
+
   .box {
     height: 10rem;
     margin: 1rem;
