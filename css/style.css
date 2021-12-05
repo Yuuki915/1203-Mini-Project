@@ -11,18 +11,19 @@ header {
 }
 .hero-img {
   background: url("../img/hero.jpeg");
-  opacity: 0.6;
+  opacity: 0.3;
   height: 60vh;
 }
 header .text {
   position: absolute;
   width: 100%;
-  color: #333;
   font-size: 2rem;
   text-align: center;
   letter-spacing: 2px;
   top: 50%;
   transform: translateY(-50%);
+  color: #fff;
+  text-shadow: 0 0 10px #888, 0 0 15px #888;
 }
 
 section {
@@ -79,32 +80,34 @@ section {
 }
 @keyframes node {
   to {
-    stroke-dashoffset: 16.666;
+    stroke-dashoffset: 11.62;
   }
 }
 @keyframes java {
   to {
-    stroke-dashoffset: 33.332;
+    stroke-dashoffset: 24.68;
   }
 }
 @keyframes sql {
   to {
-    stroke-dashoffset: 49.998;
+    stroke-dashoffset: 38.29;
   }
 }
 @keyframes py {
   to {
-    stroke-dashoffset: 66.664;
+    stroke-dashoffset: 56.42;
   }
 }
 @keyframes js {
   to {
-    stroke-dashoffset: 83.33;
+    stroke-dashoffset: 74.99;
   }
 }
-.bars {
+.pie {
+  max-width: 700px;
+  position: relative;
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
 }
 .each {
   margin: 0.5rem;
@@ -112,6 +115,12 @@ section {
   font-size: 0.8rem;
   height: 1rem;
   vertical-align: middle;
+}
+.bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 0 5rem 4rem 0;
 }
 .pie-bar {
   display: inline-block;
@@ -139,9 +148,57 @@ section {
   background-color: #3179c660;
 }
 
+.num {
+  color: #fff;
+  font-weight: 600;
+}
+.js-num {
+  position: absolute;
+  top: 35%;
+  left: 45%;
+}
+.py-num {
+  position: absolute;
+  top: 63%;
+  left: 45%;
+}
+.sql-num {
+  position: absolute;
+  top: 68%;
+  left: 26%;
+}
+.java-num {
+  position: absolute;
+  top: 52%;
+  left: 16%;
+}
+.node-num {
+  position: absolute;
+  top: 32%;
+  left: 20%;
+}
+.ts-num {
+  position: absolute;
+  top: 22%;
+  left: 28.5%;
+}
+
 .graph {
   display: none;
   height: 25rem;
+}
+
+.lines {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.line {
+  width: 1rem;
+  height: 1rem;
+  background-color: #999;
+  /* border-radius: 50px; */
+  margin: 0.7rem;
 }
 
 article {
@@ -343,11 +400,10 @@ footer p {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .pi-graph {
+  .pie {
     display: none;
   }
   .graph {
-    background-color: rgba(153, 153, 153, 0.3);
     margin: 50px 0;
     display: block;
 
