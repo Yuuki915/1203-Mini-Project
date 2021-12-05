@@ -100,17 +100,17 @@ header .text {
 
 /* ----- Kaori----- */
 .java {
-  width: 60vw;
+  width: 55vw;
   margin: 2rem auto;
   background-color: #ffd18ccb;
 }
 .node {
-  width: 60vw;
+  width: 55vw;
   margin: 2rem auto;
   background-color: #689f6370;
 }
 .ts {
-  width: 60vw;
+  width: 55vw;
   margin: 2rem auto;
   background-color: #3179c660;
 }
@@ -150,14 +150,22 @@ header .text {
 .explain-r {
   position: absolute;
   color: #fff;
-  right: 3%;
-  top: 50%;
-  transform: translate(-3%, -50%);
-  width: 30%;
+  right: 2%;
+  top: 89%;
+  transform: translate(-2%, -89%);
+  width: 38%;
   font-weight: 700;
   font-size: 0.9rem;
   letter-spacing: 1px;
   line-height: 1.4rem;
+}
+
+.wide-r {
+  display: block;
+  right: 2%;
+  top: 16%;
+  width: 38%;
+  transform: translate(-2%, -16%);
 }
 
 footer {
@@ -173,19 +181,15 @@ footer p {
 
 /* Normal */
 @media (max-width: 1200px) {
-  .java {
-    width: 80vw;
-  }
-  .node {
-    width: 80vw;
-  }
+  .java,
+  .node,
   .ts {
-    width: 80vw;
+    width: 75vw;
   }
 }
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 890px) {
   .explain-l {
     line-height: 1.4rem;
     top: 50%;
@@ -193,7 +197,15 @@ footer p {
     width: 35%;
   }
 
-  .wide-l {
+  .explain-r {
+    right: 3%;
+    top: 50%;
+    transform: translate(-3%, -50%);
+    width: 30%;
+  }
+
+  .wide-l,
+  .wide-r {
     display: none;
   }
 }
@@ -211,7 +223,7 @@ footer p {
   }
   .graph {
     height: auto;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.5rem;
   }
   .js-bar {
     height: 1.5rem;
@@ -254,7 +266,7 @@ footer p {
 
   .name {
     display: inline-block;
-    width: auto;
+    width: 15%;
     height: 100%;
     right: 0;
     color: #999;
