@@ -10,7 +10,7 @@ header {
   background-color: #fff;
 }
 .hero-img {
-  background: url("../img/hero.jpeg");
+  background: url('../img/hero.jpeg');
   opacity: 0.3;
   height: 60vh;
 }
@@ -348,12 +348,12 @@ article {
 
 footer {
   text-align: center;
-  background-image: url("../img/hero.jpeg");
+  background-image: url('../img/hero.jpeg');
   /* opacity: 0.6; */
 }
 footer p {
   color: #333;
-  font-size: 5px;
+  font-size: 0.7rem;
   padding: 0.5rem;
   background-color: rgba(255, 255, 255, 0.3);
 }
